@@ -12,15 +12,15 @@ import { SpecialOfferComponent } from './content/special-offer/special-offer.com
 import { SubscribeComponent } from './content/subscribe/subscribe.component';
 import { SuperQualityComponent } from './content/super-quality/super-quality.component';
 import { NavComponent } from './content/nav/nav.component';
+import { PopularProductsModule } from './content/popular-products/popular-products.module';
+import { ServicesModule } from './content/services/services.module';
+import { CustomerReviewsModule } from './content/customer-reviews/customer-reviews.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomerReviewsComponent,
     FooterComponent,
     HeroComponent,
-    PopularProductsComponent,
-    ServicesComponent,
     SpecialOfferComponent,
     SubscribeComponent,
     SuperQualityComponent,
@@ -28,7 +28,10 @@ import { NavComponent } from './content/nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PopularProductsModule,
+    ServicesModule,
+    CustomerReviewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
