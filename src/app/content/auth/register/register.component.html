@@ -1,0 +1,39 @@
+<div class="px-6 py-8 mx-auto">
+    <div class="w-full ">
+        <h1 class="text-center leading-tight tracking-tight text-gray-700 md:text-2xl">Register</h1>
+        <form class="py-0 px-7 box-border w-96" [formGroup]="registrationForm">
+            <div class="my-6">
+                <input 
+                    class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 focus:outline-none shadow" 
+                    placeholder="Username"
+                    type="text"
+                    formControlName="username"
+                >
+            </div>
+            <div class="my-6">
+                <input 
+                    class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 focus:outline-none shadow" 
+                    type="email" 
+                    placeholder="Email"
+                    formControlName="email"
+                >
+            </div>
+            <div class="my-6">
+                <input 
+                    class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 focus:outline-none shadow" 
+                    type="text" 
+                    placeholder="Password"
+                    formControlName="password"
+                >
+            </div>
+            <div class="flex my-3">
+                <a routerLink="/auth/login" class="w-full text-black bg-gray-400 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 mr-1 text-center shadow">Log In</a>
+                <button 
+                    type="submit" 
+                    class="w-full text-black bg-coral-red focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center shadow"
+                    (click)="onSubmit()"
+                >Register</button>
+            </div>
+        </form>
+    </div>
+</div>

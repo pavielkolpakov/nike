@@ -1,0 +1,28 @@
+<div class="px-6 py-8 mx-auto">
+    <div class="w-full">
+        <h1 class="text-center leading-tight tracking-tight text-gray-700 md:text-2xl">Login</h1>
+        <form class="py-0 px-7 box-border w-96 ">
+            <div class="my-6">
+                <input class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 focus:outline-none shadow" placeholder="Username">
+            </div>
+            <div class="my-6">
+                <input class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 focus:outline-none shadow" type="text" placeholder="Password">
+            </div>
+            <div class="flex items-center justify-between my-6">
+                <div class="flex items-start">
+                    <div class="flex items-center h-5">
+                        <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300" required="">
+                    </div>
+                    <div class="ml-3 text-sm">
+                        <label for="remember" class="text-gray-500">Remember me</label>
+                    </div>
+                </div>
+                <a href="#" class="text-sm font-medium text-primary-600 hover:underline">Forgot password?</a>
+            </div>
+            <div class="flex my-3">
+                <a routerLink="/auth/register" class="w-full text-black bg-gray-400 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 mr-1 text-center shadow">Register</a>
+                <button type="submit" class="w-full text-black bg-coral-red focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 ml-1 text-center shadow">Sign in</button>
+            </div>
+        </form>
+    </div>
+</div>

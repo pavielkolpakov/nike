@@ -24,6 +24,10 @@
 }
 
 @layer utilities {
+  .border-bottom {
+    border-bottom: 1px solid silver;
+  }
+
   .padding {
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }
@@ -56,3 +60,5 @@
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
